@@ -1,7 +1,14 @@
-export default function App({ Component, pageProps }) {
+import "@/styles/tailwind.css";
+import DefaultLayout from "@/components/Layout";
+
+function App({ Component, pageProps }) {
+  const Layout = Component.Layout || DefaultLayout;
+
   return (
-    <div>
+    <Layout>
       <Component {...pageProps} />
-    </div>
+    </Layout>
   );
 }
+
+export default App;
