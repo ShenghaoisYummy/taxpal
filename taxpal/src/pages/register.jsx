@@ -1,7 +1,8 @@
 import React from "react";
+import { LoginRegisterLayout } from "@/components/Layout";
 
 const Register = () => {
-  return <div></div>;
+  return <div>Register</div>;
 };
-
-export default Register
+Register.Layout = LoginRegisterLayout;
+export default Register;
