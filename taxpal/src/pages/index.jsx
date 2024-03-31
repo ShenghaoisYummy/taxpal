@@ -1,7 +1,13 @@
 import React from "react";
-
-const Index = () => {
-  return <div>Home</div>;
+import Head from "@/components/Head";
+import Hero from "@/components/Hero";
+const Home = () => {
+  return (
+    <>
+      <Head />
+      <Hero />
+    </>
+  );
 };
 
-export default Index;
+export default Home;
