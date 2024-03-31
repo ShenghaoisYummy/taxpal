@@ -72,6 +72,48 @@ const Hero = () => {
         </span>{" "}
         for small businesses.
       </h1>
+      <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
+        Most bookkeeping software is accurate, but hard to use. We make the
+        opposite trade-off, and hope you don't get audited.
+      </p>
+      <div className="mt-10 flex justify-center gap-x-6">
+        <Button href="/register"> Get 6 Months Free</Button>
+        <Button href="#" variant="outline">
+          <HeroRegSvg />
+          <span className="ml-3">Watch Website</span>
+        </Button>
+      </div>
+      <div className="mt-36 lg:mt-44">
+        <p className="font-display text-base text-slate-900">
+          Trusted by these six companies so far
+        </p>
+
+        <ul
+          role="list"
+          className="mt-8 flex justify-center gap-x-8 sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0"
+        >
+          {HeroCompanyLogoData.map((group, groupIndex) => (
+            <li key={groupIndex}>
+              <ul
+                role="list"
+                className="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0"
+              >
+                {group.map((company, companyIndex) => (
+                  <li key={companyIndex}>
+                    <Image
+                      src={company.logo}
+                      alt={company.name}
+                      unoptimized
+                      width={120}
+                      height={40}
+                    />
+                  </li>
+                ))}
+              </ul>
+            </li>
+          ))}
+        </ul>
+      </div>
     </Container>
   );
 };
