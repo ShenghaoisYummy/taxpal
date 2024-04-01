@@ -96,7 +96,7 @@ const Hero = () => {
             <li key={groupIndex}>
               <ul
                 role="list"
-                className="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0"
+                className="flex flex-col justify-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0"
               >
                 {group.map((company, companyIndex) => (
                   <li key={companyIndex}>
