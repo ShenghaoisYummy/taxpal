@@ -2,7 +2,7 @@ import React from 'react'
 import Container from "@/components/Container";
 import Link from "next/link";
 import Logo from "@/components/Logo";
-import NavLink from "@/components/NavLink";
+import NavLink from "@/components/Navlink";
 
 const Footer = () => {
   return (
